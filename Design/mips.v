@@ -89,7 +89,7 @@ input reset
      );
      
      
-     mux_2x1_5bits mux1
+    mux_2x1 #(.BITS(5)) mux1
      (
      .input1(instruction_out[20:16]),
      .input2(instruction_out[15:11]),
