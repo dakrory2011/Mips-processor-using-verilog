@@ -4,9 +4,9 @@
 
 module mux_2x1 #(parameter BITS =32)
     (
-input [31:0] input1,input2,
+        input [BITS-1:0] input1,input2,
 input sel,
-output [31:0] out
+        output [BITS-1:0] out
     );
     assign out = sel ? input2:input1;
 endmodule
