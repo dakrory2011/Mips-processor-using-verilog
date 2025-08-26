@@ -2,7 +2,7 @@
 
 
 
-module mux_2x1
+module mux_2x1 #(parameter BITS =32)
     (
 input [31:0] input1,input2,
 input sel,
